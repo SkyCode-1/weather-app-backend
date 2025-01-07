@@ -1,0 +1,32 @@
+# ИСКЛЮЧАЕМ ФАЙЛЫ WEBSTORM
+.idea/                      # Директория настроек проекта WebStorm
+*.iml                       # Файлы проекта IntelliJ IDEA/WebStorm
+*.ipr                       # Старый формат проекта IDEA
+*.iws                       # Файлы workspace
+
+# ОСНОВНОЕ ДЛЯ NODE.JS (ЕСЛИ ТЫ РАБОТАЕШЬ С НИМ)
+node_modules/               # Зависимости проекта (должны быть установлены через npm/yarn)
+npm-debug.log*              # Логи npm
+yarn-debug.log*             # Логи yarn
+yarn-error.log*             # Ошибки yarn
+package-lock.json           # Если ты используешь Yarn вместо npm
+
+# ОСНОВНОЕ ДЛЯ СБОРКИ (WEBPACK, REACT, VUE ИЛИ ДРУГИЕ ТЕХНОЛОГИИ)
+dist/                       # Собранные файлы проекта (webpack, vue-cli, etc.)
+build/                      # Build-артефакты
+*.cache                     # Кэш-файлы
+.vscode/                    # Если ты используешь Visual Studio Code
+
+# ОСНОВНОЕ ДЛЯ ОПЕРАЦИОННЫХ СИСТЕМ
+.DS_Store                   # Системный файл macOS
+Thumbs.db                   # Системный файл Windows
+
+# ЛОКАЛЬНЫЕ ФАЙЛЫ И НАСТРОЙКИ
+.env                        # Файлы переменных окружения
+.env.local                  # Локальные переменные окружения
+.env.*                      # Любые другие файлы окружения
+
+# TEST COVERAGE И ЛОГИ
+coverage/                   # Покрытие тестов
+*.log                       # Все лог-файлы
+logs/                       # Папка с логами
